@@ -1,7 +1,8 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .menu{
     display: none;
@@ -12,37 +13,44 @@
     width: 99px;
     height: 34px;
 }
+.search{
+    flex: 0 1 600px;
+    display: flex;
+}
 .searchbar input{
-    height: 30px;
-    width: 650px;;
+    height: 0px;
+    width: 100%;
+    margin-top:-20px;
     border: 1px solid black;
     border-radius: 30px;
     text-align: left;
     padding: 20px;
     padding-left: 50px;
     background-color: rgb(247, 245, 245);
-    display: flex;
-    margin: auto;
+    position: absolute;
+    flex: 0 1 600px;
+}
+.submit-button{
+    border:none;
+    position: absolute;
+    margin-top: -7px;
+    margin-left: 10px;
 }
 .search-icon{
-    z-index: 2;
     width:18px;
     height: 18px;
-    top: -20px;
-    left:-640px;
-    position:absolute;
+    background-color: transparent;
 }
 .nav-bar{
     z-index: 1;
     position: relative;
-    justify-content:space-between;
+    justify-content: space-around;
     align-items: center;
     height: 60px;
     box-shadow: 0 5px 5px rgb(0 0 0 / 8%), 0 5px 5px rgb(0 0 0 / 8%);
     display: flex;
+    flex: 0 1 0px;
     padding: 10px 10px;
-    flex-wrap: wrap;
-
 }
 .cart-icon,.language-icon{
     width: 30px;
@@ -67,24 +75,18 @@
     border: none;
     background-color: white;
     display: inline-flex;
-    justify-content: center;
     vertical-align: bottom;
     white-space: nowrap;
 }
 .first-section{
-    display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    display: flex;
+    position: static;
 }
 .alarm{
     width: 1240px;
-    position: relative;
-}
-.alarm-mobile{
-    display: none;
-    width: 350px;
-    position: relative;
 }
 .first-section-text{
     z-index: 1;
@@ -109,6 +111,7 @@
 .second-section{
     margin-top: 40px;
     margin-left: 110px;
+    flex-wrap: wrap;
 }
 .second-section h1{
     font-size: 34px;
@@ -130,11 +133,11 @@
     color: gray;
 }
 .courses-section{
-    border:1px solid black;
+    border: 1px solid rgb(209, 206, 206);
     padding: 2%;
     margin: 10px 100px 100px 100px;
+    flex-wrap: wrap;
 }
-
 .courses-section h1{
     font-size: 30px;
     font-family: serif;
@@ -148,15 +151,48 @@
     margin: 20px;
     border: 2px solid black;
 }
-.python{
-    display: flex;
-    justify-content: space-between;
-}
+
 .python img{
     width: 200px;
     height: 100px;
 }
-.python-course{
-    width: 10px;
-    height: 100px;
+.python-course h1{
+    font-size: 18px;
+    width: 200px;
 }
+.python-course p{
+    font-size: 10px;
+}
+.python{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .nav-item{
+        display: none;
+    } 
+    .menu{
+        position:relative;
+        display: flex;
+        margin-left: -35px;
+    }
+    .logo{
+        display: block;
+        justify-content: center;
+    }
+    .courses{
+        flex-direction: column;
+    }
+    .second-section{
+        margin-top: 180px;;
+    }
+    .first-section-text{
+        margin-top: 300px;
+        height: 60px;
+        box-shadow:none;
+        position: absolute;
+    }
+  }
