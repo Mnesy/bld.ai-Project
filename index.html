@@ -1,123 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Udemy</title>
-    <link rel="stylesheet" href="styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header>
-        <nav class="nav-bar">
-            <h1>hi</h1>
-            <div class="menu hover"><a class="menu"><img src="images\menu.png" class="menu" alt="menu"></a></div>
-            <div class="logo nav-item"><a href="#"><img src="images\logo.png" alt="home" class="logo"></a></div>
-            <div class="nav-item"><a class="categories hover">Categories</a></div>
-            <form class="search nav-item">
-                <div class="searchbar"> <input type="text" title="Search" placeholder="Search for anything"></div>
-                <div><button class="submit-button hover"><img src="images\search-icon.png" class="search-icon"
-                            alt="search"></button>
-                </div>
-            </form>
-            <div class="nav-item"><a class="udemy-business hover">Udemy Business</a></div>
-            <div class="nav-item"><a class="teach-on-udemy hover">Teach on Udemy</a></div>
-            <div class="nav-item"> <button class="cart hover"><img src="images\shopping-cart.png" class="cart-icon"
-                        alt="cart">
-            </div>
-            <div class="nav-item"> <button class="login-button hover">Login</div>
-            <div class="nav-item"> <button class="sign-up-button hover">Sign up</div>
-            <div class="nav-item"> <button class="language hover"><img src="images\language.png" class="language-icon"
-                        alt="language">
-            </div>
-        </nav>
+      <nav class="nav-bar">
+        <div class="menu hover">
+          <a href="#"><img src="images\menu.png" class="menu" alt="menu" /></a>
+        </div>
+        <div class="logo hover">
+          <a href="#"><img src="images\logo.png" alt="home" class="logo" /></a>
+        </div>
+        <div class="nav-item"><a class="categories hover">Categories</a></div>
+        <form class="searchbar nav-item">
+          <input
+            class="search-input"
+            type="text"
+            title="Search"
+            placeholder="Search for anything"
+          />
+          <div>
+            <button class="btn-default search-button courses-hover">
+              <img
+                src="images\search-icon.png"
+                class="small-icon"
+                alt="submit"
+              />
+            </button>
+          </div>
+        </form>
+        <div class="nav-item">
+          <a class="udemy-business hover">Udemy Business</a>
+        </div>
+        <div class="nav-item">
+          <a class="teach-on-udemy hover">Teach on Udemy</a>
+        </div>
+        <div class="nav-item">
+          <a class="cart hover">
+            <img
+              src="images\shopping-cart.png"
+              class="medium-icon"
+              alt="cart"
+            />
+          </a>
+        </div>
+        <div class="nav-item">
+          <button class="btn-default hover">Login</button>
+        </div>
+        <div class="nav-item">
+          <button class="btn-default hover">Sign up</button>
+        </div>
+        <div class="nav-item">
+          <button class="btn-default hover">
+            <img src="images\language.png" class="medium-icon" alt="language" />
+          </button>
+        </div>
+      </nav>
     </header>
     <main>
-        <!-- first section  -->
-        <section>
-            <div class="first-section">
-                <div> <img class="alarm" src="images\alarm.png" alt="alarm"></div>
-                <div class="first-section-text">
-                    <h1>New to Udemy? Lucky you.</h1>
-                    <p>Courses start at E€169.99. Get your new-student offer before it expires.</p>
-                </div>
-            </div>
+      <!-- first section  -->
+      <section>
+        <div class="first-section">
+          <img class="first-section-image" src="images\alarm.png" alt="alarm" />
+          <div class="first-section-text">
+            <h1>New to Udemy? Lucky you.</h1>
+            <p>
+              Courses start at E€169.99. Get your new-student offer before it
+              expires.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- second section  -->
+      <div class="second-section">
+        <div class="second-section-text">
+          <h1>A broad selection of courses</h1>
+          <p>
+            Choose from 185,000 online video courses with new addtions published
+            every month
+          </p>
+        </div>
+        <ul class="courses">
+          <li class="hover course" id="python-page">Python</li>
+          <li class="hover course" id="excel-page">Excel</li>
+          <li class="hover course" id="web-dev-page">Web Development</li>
+          <li class="hover course" id="js-page">JavaScript</li>
+          <li class="hover course" id="ds-page">Data Science</li>
+          <li class="hover course" id="aws-page">AWS Certification</li>
+          <li class="hover course" id="drawing-page">Drawing</li>
+        </ul>
+        <!-- courses section  -->
+        <section class="courses-section">
+          <div class="courses-section-text">
+            <h1>Expand your career opportunities with Python</h1>
+            <p>
+              Take one of Udemy's range of Python courses and learn how to code
+              using this incredibly useful language. Its simple syntax and
+              readability makes Python perfect for Flask, Django, data science,
+              and machine learning. You'll learn how to build everything from
+              games to sites to apps. Choose from a range of courses that will
+              appeal to...
+            </p>
+          </div>
+          <button class="btn-default hover explore-btn">Explore Python</button>
+          <!-- python courses  -->
+          <ul class="container">
+            <li class="courses-hover container-course">
+              <img
+                class="course-image"
+                src="images\python1.png"
+                alt="python course #1"
+              />
+              <div class="course-info">
+                <h1>Learn Python: The Complete Python Programming Course</h1>
+                <p>Avinash Jain, The Codex</p>
+                <h2>E£679.99</h2>
+              </div>
+            </li>
+            <li class="courses-hover container-course" alt="python course #2">
+              <img class="course-image" src="images\python2.png" />
+              <div class="course-info">
+                <h1>Learning Python for Data Analysis and Visualization</h1>
+                <p>Jose Portilla</p>
+                <h2>E£599.99</h2>
+              </div>
+            </li>
+            <li class="courses-hover container-course" alt="python course #3">
+              <img class="course-image" src="images\python3.png" />
+              <div class="course-info">
+                <h1>Python for Beginners - Learn Programming from scratch</h1>
+                <p>Edwin Diaz, Coding Faculty Solutions</p>
+                <h2>E£679.99</h2>
+              </div>
+            </li>
+            <li class="courses-hover container-course" alt="python course #4">
+              <img class="course-image" src="images\python4.png" />
+              <div class="course-info">
+                <h1>Learn Python: Python for Beginners</h1>
+                <p>Abrar Hussain</p>
+                <h2>E£679.99</h2>
+              </div>
+            </li>
+            <li class="courses-hover container-course" alt="python course #5">
+              <img class="course-image" src="images\python5.png" />
+              <div class="course-info">
+                <h1>Python Beyond the Basics - Object-Oriented Programming</h1>
+                <p>Infinite Skills</p>
+                <h2>E£679.99</h2>
+              </div>
+            </li>
+          </ul>
         </section>
-        <!-- second section  -->
-        <section>
-            <div class="second-section">
-                <h1>A broad selection of courses</h1>
-                <p>Choose from 185,000 online video courses with new addtions published every month</p>
-                <div class="courses">
-                    <div class="hover course" style="font-weight: bold; color:rgb(132, 9, 166);">Python</div>
-                    <div class="hover course">Excel</div>
-                    <div class="hover course">Web Development</div>
-                    <div class="hover course">JavaScript</div>
-                    <div class="hover course">Data Science</div>
-                    <div class="hover course">AWS Certification</div>
-                    <div class="hover course">Drawing</div>
-                    <!-- <div class="hover course"><a href="#">Python</a></div>
-                    <div class="hover course"><a href="#">Excel</a></div>
-                    <div class="hover course"><a href="#">Web Development</a></div>
-                    <div class="hover course"><a href="#">JavaScript</a></div>
-                    <div class="hover course"><a href="#">Data Science</a></div>
-                    <div class="hover course"><a href="#">AWS Certification</a></div>
-                    <div class="hover course"><a href="#">Drawing</a></div> -->
-                </div>
-            </div>
-            <!-- courses section  -->
-            <section>
-                <div class="courses-section">
-                    <h1>Expand your career opportunities with Python</h1>
-                    <p>Take one of Udemy's range of Python courses and learn how to code using this
-                        incredibly useful
-                        language. Its simple syntax and readability makes Python perfect for Flask, Django, data
-                        science,
-                        and machine learning. You'll learn how to build everything from games to sites to apps. Choose
-                        from
-                        a range of courses that will appeal to...
-                    </p>
-                    <div> <button class="explore hover"> Explore Python </div>
-                    <!-- python courses  -->
-                    <div class="python">
-                        <div class="courses-hover python-course">
-                            <img src="images\python1.png" alt="python course #1">
-                            <h1> Learn Python: The Complete Python Programming Course</h1>
-                            <p>Avinash Jain, The Codex</p>
-                            <div>E£679.99</div>
-                        </div>
-                        <div class="courses-hover python-course" alt="python course #2">
-                            <img src="images\python2.png">
-                            <h1> Learning Python for Data Analysis and Visualization</h1>
-                            <p>Jose Portilla</p>
-                            <div>E£599.99</div>
-                        </div>
-                        <div class="courses-hover python-course" alt="python course #3">
-                            <img src="images\python3.png">
-                            <h1> Python for Beginners - Learn Programming from scratch</h1>
-                            <p>Edwin Diaz, Coding Faculty Solutions</p>
-                            <div>E£679.99</div>
-                        </div>
-                        <div class="courses-hover python-course" alt="python course #4">
-                            <img src="images\python4.png">
-                            <h1> Learn Python: Python for Beginners</h1>
-                            <p>Abrar Hussain</p>
-                            <div>E£679.99</div>
-                        </div>
-                        <div class="courses-hover python-course" alt="python course #5">
-                            <img src="images\python5.png">
-                            <h1> Python Beyond the Basics - Object-Oriented Programming</h1>
-                            <p>Infinite Skills</p>
-                            <div>E£679.99</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </section>
+      </div>
     </main>
-</body>
-
+  </body>
 </html>
