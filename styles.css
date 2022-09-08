@@ -1,198 +1,248 @@
+/* Utilites  */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.menu{
+
+.medium-icon {
+  width: 30px;
+  height: 30px;
+}
+.small-icon {
+  width: 18px;
+  height: 18px;
+}
+ul {
+  list-style: none;
+}
+.btn-default {
+  border: none;
+  background-color: transparent;
+}
+.hover:hover {
+  color: rgb(132, 9, 166);
+  font-weight: bolder;
+  cursor: pointer;
+  border-color: rgb(132, 9, 166);
+}
+.courses-hover:hover {
+  color: rgb(132, 9, 166);
+  font-weight: bolder;
+  cursor: pointer;
+  filter: brightness(80%);
+}
+/* Utilites End */
+
+/* Header */
+.nav-bar {
+  z-index: 1;
+  height: 70px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 5px grey;
+  position: relative;
+}
+.menu {
+  display: none;
+  width: 30px;
+  height: 30px;
+}
+.logo {
+  width: 99px;
+  height: 34px;
+}
+.nav-item {
+  padding: 20px;
+}
+.searchbar {
+  flex-grow: 1;
+  display: flex;
+}
+.search-button {
+  padding: 70%;
+  border: 1px solid black;
+  border-radius: 0 30px 30px 0;
+  border-left: none;
+  background-color: rgb(132, 9, 166);
+}
+.search-input {
+  border-radius: 30px 0 0 30px;
+  border: 1px solid black;
+  padding-left: 15px;
+  flex: 1;
+}
+/* Header End */
+
+/* First Section */
+.first-section {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.first-section-text {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 5px 5px rgb(0 0 0 / 8%), 0 5px 5px rgb(0 0 0 / 8%);
+  z-index: 1;
+  padding: 1%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  margin: -10rem 0 0 5rem;
+}
+.first-section-image {
+  width: 100%;
+}
+/* First Section End */
+
+/* Second Section */
+.second-section {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-content: space-around;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 2% 1% 0 1%;
+}
+
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 1%;
+}
+
+/* Courses Section */
+.courses-section {
+  border: solid rgb(156, 156, 156) 1px;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+}
+.courses-section-text p {
+  max-width: 50rem;
+}
+.course {
+  padding-left: 20px;
+}
+.explore-btn {
+  border: 1px solid black;
+  font-size: 16px;
+  font-weight: bolder;
+  padding: 0.5rem;
+  width: 140px;
+  margin: 2% 0 2% 0;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.container-course {
+  width: 17rem;
+}
+.course-image {
+  width: 80%;
+}
+.course-info {
+  width: 92%;
+}
+/* Courses Section End */
+
+/* Second Section End */
+
+/* Media Queires */
+@media only screen and (max-width: 1096px) {
+  .udemy-business {
     display: none;
-    width: 30px;
-    height: 30px;
+  }
 }
-.logo{
-    width: 99px;
-    height: 34px;
+@media only screen and (max-width: 920px) {
+  .teach-on-udemy {
+    display: none;
+  }
+  .first-section-text {
+    width: 50%;
+  }
 }
-.search{
-    flex: 0 1 600px;
-    display: flex;
-}
-.searchbar input{
-    height: 0px;
+@media only screen and (max-width: 800px) {
+  .categories,
+  .search-input,
+  .login-btn,
+  .sign-up-btn,
+  .lang-btn {
+    display: none;
+  }
+  .menu {
+    display: inline-block;
+    position: absolute;
+  }
+  .cart {
+    position: absolute;
+    bottom: 20%;
+    left: 90%;
+  }
+  .nav-bar {
     width: 100%;
-    margin-top:-20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .logo {
+    position: absolute;
+    left: 35%;
+  }
+  .search-button {
+    position: absolute;
+    left: 80%;
+    bottom: 15%;
+    padding: 10px;
     border: 1px solid black;
     border-radius: 30px;
-    text-align: left;
-    padding: 20px;
-    padding-left: 50px;
-    background-color: rgb(247, 245, 245);
-    position: absolute;
-    flex: 0 1 600px;
-}
-.submit-button{
-    border:none;
-    position: absolute;
-    margin-top: -7px;
-    margin-left: 10px;
-}
-.search-icon{
-    width:18px;
-    height: 18px;
-    background-color: transparent;
-}
-.nav-bar{
-    z-index: 1;
-    position: relative;
-    justify-content: space-around;
-    align-items: center;
-    height: 60px;
-    box-shadow: 0 5px 5px rgb(0 0 0 / 8%), 0 5px 5px rgb(0 0 0 / 8%);
-    display: flex;
-    flex: 0 1 0px;
-    padding: 10px 10px;
-}
-.cart-icon,.language-icon{
-    width: 30px;
-    height: 30px;
-    border: 0ch;
-}
-.hover:hover{
-    color: rgb(132, 9, 166);
-    font-weight: bolder;
-    cursor: pointer;
-    border-color: rgb(132, 9, 166);
-}
-.courses-hover:hover{
-    color: rgb(132, 9, 166);
-    font-weight: bolder;
-    cursor: pointer;
-    -webkit-filter:brightness(80%)
-}
-.search, .language, .login-button, .sign-up-button,.cart{
-    position: relative;
-    align-items: center;
-    border: none;
-    background-color: white;
-    display: inline-flex;
-    vertical-align: bottom;
-    white-space: nowrap;
-}
-.first-section{
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    display: flex;
-    position: static;
-}
-.alarm{
-    width: 1240px;
-}
-.first-section-text{
-    z-index: 1;
-    top: 15%;
-    width:400px;
-    box-shadow: 0 5px 5px rgb(0 0 0 / 8%), 0 5px 5px rgb(0 0 0 / 8%);
-    height: 185px;
-    background:white;
-    position:absolute;
-    left:14%;
-    padding: 20px;
-}
-.first-section-text p{
-    font-family: sans-serif;
-    font-size: 18px;
-}
-.first-section-text h{
-    font-family: serif;
-    font-size: 34px;
-}
-
-.second-section{
-    margin-top: 40px;
-    margin-left: 110px;
-    flex-wrap: wrap;
-}
-.second-section h1{
-    font-size: 34px;
-    font-family: serif;
-}
-.second-section p{
-    font-family:sans-serif;
-    font-size: 16px;
-    margin-top: 5px;
-}
-.courses{
-    margin-top: 5px;
-    display: flex;
-}
-.course{
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 18px;
-    color: gray;
-}
-.courses-section{
-    border: 1px solid rgb(209, 206, 206);
-    padding: 2%;
-    margin: 10px 100px 100px 100px;
-    flex-wrap: wrap;
-}
-.courses-section h1{
-    font-size: 30px;
-    font-family: serif;
-    margin-bottom: 10px;
-}
-.explore{
-    background-color: white;
-    font-weight: bolder;
-    width: 120px;
-    height: 40px;
-    margin: 20px;
-    border: 2px solid black;
-}
-
-.python img{
-    width: 200px;
-    height: 100px;
-}
-.python-course h1{
-    font-size: 18px;
-    width: 200px;
-}
-.python-course p{
-    font-size: 10px;
-}
-.python{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-
-@media only screen and (max-width: 800px) {
-    .nav-item{
-        display: none;
-    } 
-    .menu{
-        position:relative;
-        display: flex;
-        margin-left: -35px;
-    }
-    .logo{
-        display: block;
-        justify-content: center;
-    }
-    .courses{
-        flex-direction: column;
-    }
-    .second-section{
-        margin-top: 180px;;
-    }
-    .first-section-text{
-        margin-top: 300px;
-        height: 60px;
-        box-shadow:none;
-        position: absolute;
-    }
+    background-color: rgb(132, 9, 166);
   }
+  .first-section-text {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .first-section-text {
+    position: relative;
+    box-shadow: 0 0px 0px rgb(0 0 0 / 0%), 0 0px 0px rgb(0 0 0 / 0%);
+    margin: 0;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .second-section-text,
+  .courses-section-text,
+  .explore-btn {
+    display: none;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+  }
+}
+/* Media Queires End */
+
+/* Footer */
+footer {
+  margin-top: 50px;
+  height: 60px;
+  background-color: black;
+}
+footer .logo {
+  width: 99px;
+  height: 40px;
+  margin: 1%;
+}
+/* Footer End */
