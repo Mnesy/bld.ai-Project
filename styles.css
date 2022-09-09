@@ -6,7 +6,7 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
-  width: fit-content;
+  min-width: fit-content;
 }
 .medium-icon {
   width: 30px;
@@ -92,11 +92,11 @@ ul {
   box-shadow: 0 5px 5px rgb(0 0 0 / 8%), 0 5px 5px rgb(0 0 0 / 8%);
   z-index: 1;
   padding: 1%;
-  margin: -15rem 40rem 0 5rem;
+  margin: -12% 40% 0 5%;
   height: 30%;
 }
 .header-section-image {
-  width: 100%;
+  width: 90%;
 }
 /* header Section End */
 
@@ -116,7 +116,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin: 1%;
+  margin: 0.5%;
 }
 
 /* Courses Section */
@@ -149,7 +149,8 @@ ul {
   width: 17rem;
 }
 .course-image {
-  width: 80%;
+  width: 250px;
+  height: 150px;
 }
 .course-info {
   width: 92%;
@@ -218,12 +219,10 @@ ul {
 
 /* Footer */
 footer {
-  margin-top: 50px;
   height: 60px;
   background-color: black;
 }
 footer .logo {
-  position: absolute;
   left: 2%;
   width: 99px;
   height: 40px;
